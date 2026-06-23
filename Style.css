@@ -1,0 +1,399 @@
+html {background-color: black; font-family: 'Courier New', monospace; color: gray;}
+
+* {
+    box-sizing: border-box;
+}
+
+a:link{
+    color: ghostwhite;
+    
+}
+
+a:visited{
+    color: ghostwhite;
+
+}
+
+a:hover{
+    color: grey;
+
+}
+
+h3 {
+    width: 10%;
+    min-width: 90px;
+    height: 5%;
+    background-color: black;
+    position:relative;
+    color: black;
+    transition-duration: 1s;
+    padding: 15px 35px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 130%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+        border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h3:hover {
+    text-shadow: 2px 2px black;
+    background-color: brown;
+    color: ghostwhite;
+    cursor:pointer;
+}
+            
+h1 {
+    position: relative;
+    animation-name: slidein; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin-left: 20%;
+    margin-right: auto;
+    transition-duration: 1s;
+}
+
+h4{
+    animation-name: slidein; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h2{
+    padding-left: 5%;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    
+}
+
+
+p{
+    width: 90%;
+}
+
+
+.text{margin-top: 120px; margin-left: 30px; margin-right: 30px; padding-bottom: 10%; background-color: floralwhite}
+
+.centre{position: relative; display: block; margin-left: auto; margin-right: auto;}
+
+.header{position: absolute; margin-left:5%; padding-top: 1px; min-width: 90%; text-align: center;}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    background-color:black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color:black;
+}
+
+@keyframes slidein {
+    from {
+        top: -10px;
+        background-color: black;
+        color: black;
+    }
+    to {
+        top: 0px;
+        background-color: black;
+        color: grey;
+    }               
+}
+
+.pic-container > a{
+    text-align: center;
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: 60px;
+    align-self:flex-start;
+    background-color:white;
+    
+}
+
+
+b{
+    text-align: center;
+    width: 110%;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color:black;
+}
+
+b >img {
+      text-align: center;
+    width: 400px;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: 200px;
+    background-color:white;
+}
+
+.container{
+    position: relative;
+    height: 75%;
+    border-radius: 25%;
+    margin: 1%;
+    background-color: black;
+}
+
+
+.flex-container-cover {
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    animation: intro-display-cover;
+    animation-direction: normal;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    background-image: url(renders/360.0011.jpeg);
+    position: absolute;
+    background-position: center; 
+    z-index: -1;
+}
+
+.flex-container {
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    animation: intro-display;
+    animation-direction: normal;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: absolute;
+    background-position: center; 
+    z-index: -1;
+}
+
+
+.flex-container > div {
+    animation-name: slidein; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+    width: 100px;
+    margin: 20px;
+    line-height: 75px;
+    text-align: center;
+    background-color:aqua;
+}
+
+.pic-container {
+    display:flex;
+    flex-wrap:wrap;
+    background-color:black;
+    overflow-x: auto;
+    height: 105%;
+    align-self: center;
+    margin: 5%;
+    margin-left: 15%;
+
+}
+.pic-container > a {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 10%;
+}
+
+.pic-container > b {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.pic-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:black;
+    overflow-x: auto;
+    height: 450px;
+    margin-left: 5%;
+    margin: 5%;
+}
+
+.pic-container > .column > a >img {
+    width: 100%;
+    line-height: 10%;
+    text-align: right;
+    background-color:aqua;
+    border-style: solid;
+    border-color: ghostwhite;
+    transition: 0.3s;
+}
+
+.pic-container > a > img:hover{
+    width:  103%;
+    margin-left: -1.5%;
+}
+
+.pic-container > a >img {
+    width: 100%;
+    line-height: 10%;
+    text-align: right;
+    background-color:aqua;
+    border-style: solid;
+    border-color: ghostwhite;
+    transition: 0.3s;
+}
+
+
+.pic-container > a > img:hover{
+    width:  103%;
+    margin-left: -1.5%;
+}
+
+
+.line{
+    background-color:ghostwhite; 
+    height: 3px; 
+    width: 90%; 
+    margin-left: 5%;
+    animation-name: line-in;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+@keyframes line-in{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes intro-display {
+    0% {background-image: url(renders/360.0011.jpeg)}
+    1% {background-image: url(renders/360.0012.jpeg)}
+    2% {background-image: url(renders/360.0013.jpeg)}
+    3% {background-image: url(renders/360.0014.jpeg)}
+    4% {background-image: url(renders/360.0015.jpeg)}
+    5% {background-image: url(renders/360.0016.jpeg)}
+    6% {background-image: url(renders/360.0017.jpeg)}
+    7% {background-image: url(renders/360.0018.jpeg)}
+    8% {background-image: url(renders/360.0019.jpeg)}
+    9% {background-image: url(renders/360.0020.jpeg)}
+    10% {background-image: url(renders/360.0021.jpeg)}
+    11% {background-image: url(renders/360.0022.jpeg)}
+    12% {background-image: url(renders/360.0023.jpeg)}
+    13% {background-image: url(renders/360.0024.jpeg)}
+    14% {background-image: url(renders/360.0025.jpeg)}
+    15% {background-image: url(renders/360.0026.jpeg)}
+    16% {background-image: url(renders/360.0027.jpeg)}
+    17% {background-image: url(renders/360.0028.jpeg)}
+    18% {background-image: url(renders/360.0029.jpeg)}
+    19% {background-image: url(renders/360.0030.jpeg)}
+    20% {background-image: url(renders/360.0031.jpeg)}
+    21% {background-image: url(renders/360.0032.jpeg)}
+    22% {background-image: url(renders/360.0033.jpeg)}
+    23% {background-image: url(renders/360.0034.jpeg)}
+    24% {background-image: url(renders/360.0035.jpeg)}
+    25% {background-image: url(renders/360.0036.jpeg)}
+    26% {background-image: url(renders/360.0037.jpeg)}
+    27% {background-image: url(renders/360.0038.jpeg)}
+    28% {background-image: url(renders/360.0039.jpeg)}
+    29% {background-image: url(renders/360.0040.jpeg)}
+    30% {background-image: url(renders/360.0041.jpeg)}
+    31% {background-image: url(renders/360.0042.jpeg)}
+    32% {background-image: url(renders/360.0043.jpeg)}
+    33% {background-image: url(renders/360.0044.jpeg)}
+    34% {background-image: url(renders/360.0045.jpeg)}
+    35% {background-image: url(renders/360.0046.jpeg)}
+    36% {background-image: url(renders/360.0047.jpeg)}
+    37% {background-image: url(renders/360.0048.jpeg)}
+    38% {background-image: url(renders/360.0049.jpeg)}
+    39% {background-image: url(renders/360.0050.jpeg)}
+    40% {background-image: url(renders/360.0051.jpeg)}
+    41% {background-image: url(renders/360.0052.jpeg)}
+    42% {background-image: url(renders/360.0053.jpeg)}
+    43% {background-image: url(renders/360.0054.jpeg)}
+    44% {background-image: url(renders/360.0055.jpeg)}
+    45% {background-image: url(renders/360.0056.jpeg)}
+    46% {background-image: url(renders/360.0057.jpeg)}
+    47% {background-image: url(renders/360.0058.jpeg)}
+    48% {background-image: url(renders/360.0059.jpeg)}
+    49% {background-image: url(renders/360.0060.jpeg)}
+    50% {background-image: url(renders/360.0061.jpeg)}
+    51% {background-image: url(renders/360.0060.jpeg)}
+    52% {background-image: url(renders/360.0059.jpeg)}
+    53% {background-image: url(renders/360.0058.jpeg)}
+    54% {background-image: url(renders/360.0057.jpeg)}
+    55% {background-image: url(renders/360.0056.jpeg)}
+    56% {background-image: url(renders/360.0055.jpeg)}
+    57% {background-image: url(renders/360.0054.jpeg)}
+    58% {background-image: url(renders/360.0053.jpeg)}
+    59% {background-image: url(renders/360.0052.jpeg)}
+    60% {background-image: url(renders/360.0051.jpeg)}
+    61% {background-image: url(renders/360.0051.jpeg)}
+    62% {background-image: url(renders/360.0050.jpeg)}
+    63% {background-image: url(renders/360.0049.jpeg)}
+    64% {background-image: url(renders/360.0048.jpeg)}
+    65% {background-image: url(renders/360.0047.jpeg)}
+    66% {background-image: url(renders/360.0046.jpeg)}
+    67% {background-image: url(renders/360.0045.jpeg)}
+    68% {background-image: url(renders/360.0044.jpeg)}
+    69% {background-image: url(renders/360.0043.jpeg)}
+    70% {background-image: url(renders/360.0042.jpeg)}
+    71% {background-image: url(renders/360.0041.jpeg)}
+    72% {background-image: url(renders/360.0040.jpeg)}
+    73% {background-image: url(renders/360.0039.jpeg)}
+    74% {background-image: url(renders/360.0038.jpeg)}
+    75% {background-image: url(renders/360.0037.jpeg)}
+    76% {background-image: url(renders/360.0036.jpeg)}
+    77% {background-image: url(renders/360.0035.jpeg)}
+    78% {background-image: url(renders/360.0034.jpeg)}
+    79% {background-image: url(renders/360.0033.jpeg)}
+    80% {background-image: url(renders/360.0032.jpeg)}
+    81% {background-image: url(renders/360.0031.jpeg)}
+    82% {background-image: url(renders/360.0030.jpeg)}
+    83% {background-image: url(renders/360.0029.jpeg)}
+    84% {background-image: url(renders/360.0028.jpeg)}
+    85% {background-image: url(renders/360.0027.jpeg)}
+    86% {background-image: url(renders/360.0026.jpeg)}
+    87% {background-image: url(renders/360.0025.jpeg)}
+    88% {background-image: url(renders/360.0024.jpeg)}
+    89% {background-image: url(renders/360.0023.jpeg)}
+    90% {background-image: url(renders/360.0022.jpeg)}
+    91% {background-image: url(renders/360.0021.jpeg)}
+    92% {background-image: url(renders/360.0020.jpeg)}
+    93% {background-image: url(renders/360.0019.jpeg)}
+    94% {background-image: url(renders/360.0018.jpeg)}
+    95% {background-image: url(renders/360.0017.jpeg)}
+    96% {background-image: url(renders/360.0016.jpeg)}
+    97% {background-image: url(renders/360.0015.jpeg)}
+    98% {background-image: url(renders/360.0014.jpeg)}
+    99% {background-image: url(renders/360.0013.jpeg)}
+    100% {background-image: url(renders/360.0012.jpeg)}
+}
+
+@keyframes intro-display-cover {
+    0% {opacity: 100%;}
+    99% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: green; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: grey; 
+    border-radius: 10px;
