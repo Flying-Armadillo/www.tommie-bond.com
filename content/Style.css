@@ -384,7 +384,7 @@ b >img {
     100% {opacity: 0%;}
 }
 
-@media (orientation: landscape) {
+@media (orientation: portrait) {
   .column {width:100%; float: none}
 }
 
