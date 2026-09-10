@@ -385,7 +385,7 @@ b >img {
 }
 
 @media only screen and (max-width: 600px) {
-  .column {background: red;}
+  .column {background: red; width:100%;}
 }
 
 ::-webkit-scrollbar {
