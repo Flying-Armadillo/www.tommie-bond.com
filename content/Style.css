@@ -384,6 +384,10 @@ b >img {
     100% {opacity: 0%;}
 }
 
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
