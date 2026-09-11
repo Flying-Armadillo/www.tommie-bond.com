@@ -385,7 +385,7 @@ b >img {
 }
 
 @media (orientation: portrait) {
-  .column {width:100%; padding: 20px; float: none;}
+  .column {width:100%; padding: 0px; float: none;}
 }
 
 ::-webkit-scrollbar {
